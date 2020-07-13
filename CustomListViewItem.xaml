@@ -1,0 +1,19 @@
+﻿<UserControl x:Class="Pract.CustomListViewItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Pract"
+             mc:Ignorable="d">
+    <ListViewItem>
+        <Border BorderBrush="LightGray" BorderThickness="1 1 1 1">
+            <StackPanel Width="260">
+                <TextBlock x:Name="tb_place" TextWrapping="Wrap" Text="Местоположение: "/>
+                <TextBlock x:Name="tb_city" TextWrapping="Wrap" Text="Город: "/>
+                <TextBlock x:Name="tb_adress" Text="Адрес: "/>
+                <TextBlock x:Name="tb_latitude" Text="Широта: " Opacity="0.7"/>
+                <TextBlock x:Name="tb_longitude" Text="Долгота: " Opacity="0.7"/>
+            </StackPanel>
+        </Border>
+    </ListViewItem>
+</UserControl>
